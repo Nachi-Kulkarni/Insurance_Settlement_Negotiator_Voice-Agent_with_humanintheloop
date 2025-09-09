@@ -1,44 +1,46 @@
-# 🏆 Portia-Powered Voice Settlement Agent
+# 🎙️ Insurance Settlement Negotiator Voice Agent
 
-> **The first insurance settlement system that uses Portia's AI planning to deliver emotionally intelligent, voice-driven claim resolution with faster settlements and higher customer satisfaction at a cheaper cost.**
+> **An AI-powered voice agent that handles insurance claim settlements through intelligent conversation, emotional analysis, and human-in-the-loop oversight for optimal outcomes.**
 
-## 🚀 Quick Demo
+## 🚀 Getting Started
 
 ```bash
+# Clone the repository
+git clone https://github.com/Nachi-Kulkarni/Insurance_Settlement_Negotiator_Voice-Agent_with_humanintheloop.git
+cd Insurance_Settlement_Negotiator_Voice-Agent_with_humanintheloop
+
 # Install dependencies
 pip install -r requirements.txt
 
-# Set your API keys
-export HUME_API_KEY=your_hume_key
-export OPENAI_API_KEY=your_openai_key  
-export PORTIA_API_KEY=your_portia_key
+# Set up environment variables
+cp .env.example .env
+# Edit .env file with your API keys
 
 # Run the settlement agent
 python src/main_evi.py
 
-# Try saying: "I want to settle for twenty-five thousand dollars"
+# Example interaction: "I want to settle my claim for $25,000"
 ```
 
-## 🎯 Features
+## 🎯 Key Features
 
-- **Voice AI**: HUME EVI 3 emotional intelligence
-- **AI Planning**: Portia SDK orchestration  
-- **Human-in-Loop**: Critical decision oversight
-- **Real-time**: Sub-500ms response times
-- **Future-Ready**: Built for next-gen AI
+- **Emotional Intelligence**: Advanced voice analysis using Hume AI for emotional context
+- **Intelligent Conversation**: Natural language processing for settlement negotiations
+- **Human Oversight**: Human-in-the-loop workflow for critical decisions
+- **Real-time Processing**: Sub-500ms response times for seamless interaction
+- **Comprehensive Testing**: Full test suite for reliability and accuracy
 
-## 🏗️ Architecture
+## 🏗️ System Architecture
 
 ```
-Customer Voice → HUME EVI 3 → Portia SDK → Human Loop
-     ↓              ↓            ↓          ↓
-  Emotions      AI Agent    Smart Planning  Critical Decisions
+Customer Voice → Hume AI EVI → Settlement Engine → Human Review
+     ↓              ↓               ↓              ↓
+  Emotions      AI Processing    Smart Analysis   Final Approval
 ```
 
-## 🏆 Hackathon Winning Project
+## 💡 Technical Implementation
 
-This project showcases the future of voice negotiations - where AI handles emotional labor and humans make critical decisions. 
-See `docs/hackathon_pitch.md` for full presentation materials.
+This system demonstrates advanced integration of voice AI, natural language processing, and automated decision-making with human oversight for complex financial negotiations.
 
 ## 🚀 Project Structure
 
@@ -58,10 +60,30 @@ portia-final/
 └── requirements.txt                  # Dependencies
 ```
 
-## 🏅 Built With
+## 🛠️ Technologies Used
 
-- 🧠 **Portia SDK**: AI planning and tool orchestration
-- 🎤 **Hume EVI 3**: Emotional voice intelligence  
-- 🏗️ **Python**: Production-ready implementation
-- 🚀 **Innovation**: First-of-kind voice + planning integration
+- **Python**: Core application development
+- **Hume AI EVI**: Emotional voice intelligence and conversation handling
+- **OpenAI GPT**: Natural language processing and decision making
+- **Portia SDK**: AI agent orchestration and tool management
+- **WebSocket**: Real-time voice communication
+- **Pytest**: Comprehensive testing framework
+
+## 📋 Prerequisites
+
+- Python 3.9+
+- API keys for Hume AI, OpenAI, and Portia
+- Microphone access for voice input
+- Internet connection for API calls
+
+## 🧪 Testing
+
+```bash
+# Run all tests
+pytest tests/
+
+# Run specific test categories
+pytest tests/test_tool_calling.py
+pytest tests/test_config.py
+```
 
